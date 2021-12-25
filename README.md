@@ -2,7 +2,7 @@
 
 Nginx反向代理配置文件（不发送TLS SNI头），支持直连IP联通但是域名无法访问的情况。
 
-**局限性**：不支持基于SNI分配证书的CDN，例如：Akamai、CloudFlare，不传输SNI无法获得证书从而无法通过IP直接连接。
+**局限性**：不支持基于SNI分配证书的CDN，例如：Akamai、CloudFlare，不传输SNI无法获得证书从而无法通过IP直接连接（单IP多域名）。
 
 ## 部署
 
