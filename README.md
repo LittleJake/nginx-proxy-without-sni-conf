@@ -77,4 +77,4 @@ ps：后期添加域名后，执行`sudo bash bash gen_cert.sh`即可更新证�
 
 ## 感谢
 
-配置文件思路参考：(mashirozx/Pixiv-Nginx)[https://github.com/mashirozx/Pixiv-Nginx]
+配置文件思路参考：[mashirozx/Pixiv-Nginx](https://github.com/mashirozx/Pixiv-Nginx)
