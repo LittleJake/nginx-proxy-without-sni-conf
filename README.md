@@ -4,9 +4,12 @@ Nginx反向代理配置文件（不发送TLS SNI头），支持直连IP联通但
 
 ## 部署
 
-1. 下载配置文件：(reverse.conf)[https://cdn.jsdelivr.net/gh/LittleJake/nginx-proxy-without-sni-conf/reverse.conf] 至Nginx配置文件目录；
-2. 签发自签名证书并导入计算机/手机内；
-3. 直接访问域名。
+1. `git clone https://github.com/LittleJake/nginx-proxy-without-sni-conf/`，拷贝`conf.d`、`ca`至Nginx配置文件目录；
+2. 签发自签名证书，进入`ca`目录依次执行`sudo bash gen_ca_cert_key.sh`、`sudo bash bash gen_cert.sh`，随便输入相关信息。
+3. 导入`FakeCA.crt`到计算机/手机内；
+4. 直接访问域名即可打开。
+
+ps：后期添加域名后，执行`sudo bash bash gen_cert.sh`即可更新证书对应域名。
 
 ## 支持站点
 
